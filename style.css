@@ -2,74 +2,156 @@
     margin: 0;
     padding: 0;
 }
-body{
-    background-color: rgb(67, 57, 57);
-    text-align: center;
-}
-h1{
-    font-size: 10vh;
-    /* height: 10vh; */
-    text-decoration: underline;
-    color: white;
+html,body{
+    width: 100%;
+    height: 100%;
+    background-color: black;  
 }
 .container{
-    height: 70vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 100vw;
+    height: 100vh;
 }
-.game{
-    height: 60vmin;
-    width: 60vmin;
+
+.magic-box{
+    width: 30%;
+    height: 30%;
+    margin: 30px 500px 0px 500px;
+    text-align: center;
+    border: 5px solid rgb(179, 14, 14);
+    padding: 8px 0px 5px 0px;
+    background-color: white;
+    overflow: auto;
+}
+.magic-box h1{
+    padding-bottom: 20px;
+}
+
+.colors{
+    width: 100vw;
+    height: 60vh;
     display: flex;
-    gap: 2vmin;
-    flex-wrap: wrap;
-    justify-content: center;
     align-items: center;
+    justify-content: space-evenly;
 }
 .box{
-    height: 18vmin;
-    width: 18vmin;
-    border-radius: 15%;
-    border: none;
-    box-shadow: 0 0 1rem rgb(243, 239, 239);
-    font-size: 12vmin;
-    color: #2707f8;
-    background-color: #44fc11;
-}
-
-#resetBtn{
-    padding: 4vmin;
-    font-size: 6vmin;
-    color: #080707;
-    background-color:  rgb(249, 14, 6);
-    border-radius: 4vmin;
-    border: none;
-}
-#new-btn{
-    padding: 4vmin;
-    /* height:4vmin ; */
-    font-size: 6vmin;
-    color: #100f0f;
-    background-color: rgb(249, 14, 6);
-    border-radius: 2.5vmin;
-    border: none;
-
-}
-#msg{
-    font-size: 15vmin;
-    color: rgb(243, 245, 239);
-}
-
-.msg-Content{
-    height: 290vmin;
+    width: 40%;
+    height: 60%;
+    background-color: white;
+    border: 5px solid rgb(179, 14, 14);
+    text-align: center;
     display: flex;
-    justify-content: center;
     align-items: center;
-    display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 15px;
+    overflow: auto;
+}
+.box h1{
+    padding:5px 100px 5px 150px ;
+}
+.Color{
+    width: 8vw;
+    height: 10vh;
+    border: 2px solid black;
+    padding: 6px;
 }
 
-.hide{
-    display: none;
+.red{
+    background-color: red;
 }
+.green{
+    background-color: green;
+}
+.yellow{
+    background-color: yellow;
+}
+.black{
+    background-color: black;
+}
+.gray{
+    background-color: gray;
+}
+.violet{
+    background-color: violet;
+}
+.teal{
+    background-color: teal;
+}
+.aqua{
+    background-color: aqua;
+}
+.text{
+    width: 40%;
+    height: 60%;
+    background-color: white;
+    border: 5px solid rgb(179, 14, 14);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    overflow: auto;
+}
+.text h1{
+    padding:5px 100px 5px 150px ;
+}
+.Color1{
+    width: 8vw;
+    height: 10vh;
+    border: 2px solid black;
+    padding: 6px;
+}
+.red1{
+    background-color: red;
+}
+.green1{
+    background-color: green;
+}
+.yellow1{
+    background-color: yellow;
+}
+.black1{
+    background-color: white;
+}
+.gray1{
+    background-color: gray;
+}
+.violet1{
+    background-color: violet;
+}
+.teal1{
+    background-color: teal;
+}
+.aqua1{
+    background-color: aqua;
+}
+
+
+
+
+/*-----------------midiao quaries-------------- */
+@media (max-width: 600px) {
+    .magic-box {
+        margin: 30px 100px 0px 200px; 
+    }
+    .magic-box h1{
+        font-size: 3vw;
+    }
+    .box h1{
+        font-size: 3vw;
+        padding:5px 0px 5px 40px ;
+
+    }
+    .Color1{
+        width: 5vw;
+        height: 8vw;
+    }
+    .text h1{
+        font-size: 3vw;
+        padding:5px 0px 5px 40px ;
+
+    }
+    .Color{
+        width: 5vw;
+        height: 8vw;
+    }
+  }
